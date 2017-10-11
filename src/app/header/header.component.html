@@ -1,0 +1,36 @@
+<mat-toolbar color="primary">
+    <!--Menu button-->
+    <span>
+       <div>
+            <button mat-button>
+                <i class="material-icons">menu</i>
+            </button>
+        </div>
+    </span>
+
+
+    <!--Title-->
+    <span class="example-fill-remaining-space">
+        <div>
+            <span><h2>The ToDo App</h2></span>
+        </div>
+    </span>
+
+
+    <!--Account button and menu-->
+    <span>
+        <div >
+            <button mat-button [matMenuTriggerFor]="menu">
+                <i class="material-icons">account_circle</i>
+            </button>
+            <mat-menu #menu="matMenu" [overlapTrigger]="false">
+                <button mat-menu-item>
+                <span>
+                    Login
+                </span>
+                </button>
+                <button mat-menu-item>New Account</button>
+            </mat-menu>
+        </div>
+    </span>
+</mat-toolbar>
