@@ -1,0 +1,18 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav [opened]="sidenavOpen">
+        <div fxLayout="column" fxLayoutAlign="start start" >
+            <h3>First</h3>
+            <h3>Second</h3>
+            <h3>Huuuuuuuuuuge Third</h3>
+        </div>
+    </mat-sidenav>
+
+    <!--Header-->
+    <app-header (toggleSidebar)="sidenav.open()"></app-header>
+
+    <h1>Some content</h1>
+
+    <h1>Some content</h1>
+
+    <h1>Some content</h1>
+</mat-sidenav-container>

@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { matModules } from './modules/material-design.module';
 import { HeaderComponent } from './header/header.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        HeaderComponent
+        HeaderComponent,
+        SidenavComponent
     ],
     imports: [
         BrowserModule,
